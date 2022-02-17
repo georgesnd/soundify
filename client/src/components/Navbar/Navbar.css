@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+.navbarHeader {
+    height: 80px;
+    width: 80%;
+    color: #ffffff;
+    background-color: #141313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+
+}
+
+.navbarPlaceholder{
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    font-size: 17px;
+}
