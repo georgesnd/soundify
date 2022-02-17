@@ -1,8 +1,8 @@
 import React from "react";
-import './SongCards';
+import './SongCards.css';
 
 function SongCards() {
-  
+
   return (
     <div>SongCards</div>
   )
