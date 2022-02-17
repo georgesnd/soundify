@@ -4,12 +4,13 @@
 
 .navbarHeader {
     height: 80px;
-    width: 100vw;
+    width: 80%;
     color: #ffffff;
     background-color: #141313;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 25vw;
 
 }
 
