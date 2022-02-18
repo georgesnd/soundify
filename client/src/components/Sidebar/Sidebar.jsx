@@ -11,11 +11,10 @@ function Sidebar() {
     // const({})
   return (
     <div className="sidebar">
-      {/* <img
-        className="sidebarLogo"
-        src={img}
-        alt="Soundify logo"
-      /> */}
+      <div className="sidebarLogo">
+        {/* `url({img})` */}
+         
+         </div>
         <div className='sidebarMenu'>
             <div><BiHome  className="sidebarIcon"/>Home</div>
             <div><BiSearch  className="sidebarIcon"/>Search</div>
