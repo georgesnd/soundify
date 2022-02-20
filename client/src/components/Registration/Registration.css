@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.regisWrapper{
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10vw;
+}
+
+.topIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.buttonSignup{
+    width: 450px;
+    height: 150px;
+}
+
+.facebookSignup {
+    width: 402px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupFacebook {
+    color: white;
+    background-color: rgb(40, 40, 180);
+    height: 45px;
+    width: 312px;
+    column-gap: 15px;
+    border: 1px solid;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.signupIcon {
+    font-size: 24px;
+}
+
+
+.googleSignup {
+    width: 402px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.signupGoogle {
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 253, 253);
+    height: 45px;
+    width: 312px;
+    column-gap: 15px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+.formDivider  hr {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formGroup {
+    width: 402px;
+    height: 104px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.labelGroup {
+    width: 402px;
+    height: 28px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.Row {
+    width: 402px;
+    height: 28px;
+    text-align: left;
+    line-height: 1.8;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+input {
+    width: 450px;
+    height: 52px;
+    font-size: 20px;
+    padding: 10px;
+}
+/*Date of birth  */
+.bioData {
+    width: 402px;
+    height: 132px;
+    margin-top: 50px;
+    /* display: inline; */
+    /* justify-content: left;
+    align-items: flex-start; */
+}
+
+.bioLabelGroup {
+    width: 402px;
+    height: 28px;
+    text-align: left;
+    line-height: 1.8;
+    /* display: flex; */
+    /* justify-content: left;
+    align-items: left; */
+}
+
+.Row-sc {
+    width: 450px;
+    height: 80px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-wrap: nowrap;
+}
+
+.monthWrapper {
+    height: 203px;
+    width: 80px;
+}
+.monthFormGroup {
+    height: 203px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.monthLabelGroup {
+    width: 203px;
+    height: 28px;
+    font-size: 18px;
+    padding: 1px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+.SelectContainer {
+    width: 203px;
+    height: 53px;
+    font-size: 18px;
+    /* padding: 10px; */
+}
+
+#month {
+    font-size: 20px;
+    width: 202.5px;
+    height: 52px;
+    padding: 10px;
+}
+
+/* Day*/
+.Day {
+    width: 90px;
+    height: 80px;
+}
+
+.dayFormGroup {
+    width: 90px;
+    height: 80px;
+}
+
+.dayLabelGroup {
+    width: 90px;
+    height: 80px;
+    display: flex;
+    /* align-self: start; */
+}
+
+.dayLabel{
+    width: 90px;
+    height: 24px;
+}
+
+#day {
+    width: 75px;
+    height: 52px;
+}
+
+.Year {
+    width: 112.5px;
+    height: 80px;
+
+}
+
+.yearFormGroup {
+    width: 112.5px;
+    height: 80px; 
+}
+
+.yearLabelGroup {
+    width:112.5px;
+    height: 28px;
+    display: flex;
+}
+
+.yearInput {
+    width:112.5px;
+    height: 52px;
+}
+/*  radio */
+
+.radioGroup {
+    width: 450px;
+    height: 85px;
+}
+
+.radioLabelGroup {
+    width: 450px;
+    height: 28px;
+    display: flex;
+}
+
+.radioInlineGroup {
+    width: 450px;
+    height: 32px;
+}
+
+.Radio {
+    width: 84px;
+    height: 32px;
+    display: flex;
+}
+
+#gender_option_male {
+    width: 1px;
+    height: 1px;
+}
+
+#gender_option_female {
+    width: 1px;
+    height: 1px;
+}
+#gender_option_nonbinary {
+    width: 1px;
+    height: 1px;
+}
