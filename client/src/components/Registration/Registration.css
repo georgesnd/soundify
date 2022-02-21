@@ -4,25 +4,26 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #2607f5;
+    background-color: #076ef5;
     font-size: .875rem;
     font-weight: 500;
 }
 .regisWrapper{
     height: 100%;
-    width: 50vw;
+    width: 40vw;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-left: 25vw;
     justify-content: center;
-    background-color: rgb(240, 240, 243);
+    background-color: #f9f9ff;
     margin-top: 10vh;
     margin-bottom: 15vh;
     border-radius: 15px;
 }
  form {
     width: 30vw;
+    margin-left: 5vw;
  }
 .topIcon{
     display: flex;
@@ -30,7 +31,7 @@ body {
     align-items: center;
     column-gap: 5px;
     font-size: 20px;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 h2 {
@@ -38,8 +39,8 @@ h2 {
     text-align: center;
 }
 img {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
 }
 
 .buttonSignup{
@@ -91,7 +92,7 @@ img {
     height: 45px;
     width: 312px;
     column-gap: 15px;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -102,15 +103,23 @@ img {
 }
 
 .formDivider  hr {
-    width: 100px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.hrdivider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+
 .formGroup {
     width: 402px;
-    height: 104px;
+    height: 85px;
     margin-top: 10px;
     display: flex;
     /* justify-content: left; */
@@ -136,7 +145,7 @@ img {
 
 input {
     width: 450px;
-    height: 42px;
+    height: 40px;
     font-size: 1rem;
     padding: 10px;
     border-radius: 5px;
@@ -146,20 +155,15 @@ input {
 .bioData {
     width: 402px;
     height: 132px;
-    margin-top: 30px;
     display: inline;
-    /* justify-content: left;
-    align-items: flex-start; */
 }
 
 .bioLabelGroup {
+    margin-top: 30px;
     width: 450px;
     height: 28px;
     text-align: left;
     line-height: 1.8;
-    /* display: flex; */
-    /* justify-content: left;
-    align-items: left; */
     font-size: .875rem;
 }
 
@@ -167,8 +171,6 @@ input {
     width: 450px;
     height: 80px;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     flex-wrap: nowrap;
 }
 
@@ -197,7 +199,7 @@ input {
 }
 .SelectContainer {
     width: 203px;
-    height: 53px;
+    height: 50px;
     font-size: 18px;
 }
 
@@ -266,6 +268,7 @@ input {
 }
 
 .radioLabelGroup {
+    margin-top: 40px;
     width: 450px;
     height: 28px;
     display: flex;
@@ -346,8 +349,7 @@ height: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: transparent; */
-    /* border-radius: 35px; */
+
 }
 
 .Button {

@@ -1,9 +1,45 @@
 import "./Registration.css";
-import React from "react";
+
 import logo2 from "../Assets/logo2.png";
 import { BsFacebook, BsGoogle } from "react-icons/bs";
 
+// import Login from './Login';
+import React, {useState, useEffect} from "react";
+
+
+
+
 function Registration() {
+  const AUTH_KEY = 'info';
+
+  const [info, setInfo] = useState({
+    email:"",
+    password:"",
+    username:"",
+    biodata:"",
+    gender:""
+
+  })
+
+useEffect(() => {
+        const retriveContacts = JSON.parse(server.getItem(AUTH_KEY));
+        if (retriveContacts) setInfo(retriveContacts);
+    }, [])
+
+    useEffect(()=>{
+        server.setItem(AUTH_KEY, JSON.stringify(Info))
+    },[Info])
+
+    let register = (e) =>{
+        e.preventDefault()
+
+        if (!Info.username || !Info.email || !Info.password || !Info.biodate || !info.gender) {
+            alert("Complete all the fields!!!")
+            return
+        }
+    }
+
+
   return (
     <div className="regisWrapper">
       <div className="topIcon">
@@ -28,12 +64,12 @@ function Registration() {
       </div>
 
       <span className="formDivider">
-        <p>
-          <hr /> or <hr />
-        </p>
+        <div className="hrdivider">
+          <hr className="hrbefore"/> or <hr className="hrafter"/>
+        </div>
       </span>
 
-      <form noValidate method="">
+      <form onSubmit={register}>
         <h2>Sign up with your email address</h2>
 
         <div className="formGroup">
@@ -142,7 +178,7 @@ function Registration() {
                     width="16"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
-                    class="Svg-ytk21e-0 kqPsGr SelectArrow-sc-12qvh0d-0 bSBwaw"
+                    class="Svg"
                   >
                     <polyline
                       points="20 8 12 17 4 8"
