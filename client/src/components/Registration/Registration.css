@@ -3,26 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    background-color: #2607f5;
+    font-size: .875rem;
+    font-weight: 500;
+}
 .regisWrapper{
     height: 100%;
-    width: 80vw;
+    width: 50vw;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 10vw;
+    margin-left: 25vw;
+    justify-content: center;
+    background-color: rgb(240, 240, 243);
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    border-radius: 15px;
 }
-
+ form {
+    width: 30vw;
+ }
 .topIcon{
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 5px;
     font-size: 20px;
+    margin-top: 5vh;
 }
 
 h2 {
     margin-top: 40px;
+    text-align: center;
 }
 img {
     height: 50px;
@@ -44,7 +57,7 @@ img {
 
 .signupFacebook {
     color: white;
-    background-color: rgb(40, 40, 180);
+    background-color: #2828b4;
     height: 45px;
     width: 312px;
     column-gap: 15px;
@@ -100,7 +113,7 @@ img {
     height: 104px;
     margin-top: 10px;
     display: flex;
-    justify-content: left;
+    /* justify-content: left; */
     align-items: flex-start;
 }
 
@@ -123,28 +136,31 @@ img {
 
 input {
     width: 450px;
-    height: 52px;
-    font-size: 20px;
+    height: 42px;
+    font-size: 1rem;
     padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #777;
 }
 /*Date of birth  */
 .bioData {
     width: 402px;
     height: 132px;
-    margin-top: 50px;
-    /* display: inline; */
+    margin-top: 30px;
+    display: inline;
     /* justify-content: left;
     align-items: flex-start; */
 }
 
 .bioLabelGroup {
-    width: 402px;
+    width: 450px;
     height: 28px;
     text-align: left;
     line-height: 1.8;
     /* display: flex; */
     /* justify-content: left;
     align-items: left; */
+    font-size: .875rem;
 }
 
 .Row-sc {
@@ -157,12 +173,12 @@ input {
 }
 
 .monthWrapper {
-    height: 203px;
-    width: 80px;
+    height: 80px;
+    width: 202px;
 }
 .monthFormGroup {
-    height: 203px;
-    width: 80px;
+    height: 80px;
+    width: 203px;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -172,9 +188,8 @@ input {
 .monthLabelGroup {
     width: 203px;
     height: 28px;
-    font-size: 18px;
+    font-size: .875rem;
     padding: 1px;
-    /* background-color: red; */
     display: flex;
     justify-content: left;
     align-items: left;
@@ -184,20 +199,20 @@ input {
     width: 203px;
     height: 53px;
     font-size: 18px;
-    /* padding: 10px; */
 }
 
 #month {
-    font-size: 20px;
+    font-size: .875rem;
     width: 202.5px;
     height: 52px;
-    padding: 10px;
+    padding: .875rem;
 }
 
 /* Day*/
 .Day {
     width: 90px;
     height: 80px;
+    margin-left: 20px;
 }
 
 .dayFormGroup {
@@ -207,9 +222,9 @@ input {
 
 .dayLabelGroup {
     width: 90px;
-    height: 80px;
+    height: 27px;
     display: flex;
-    /* align-self: start; */
+   
 }
 
 .dayLabel{
@@ -259,24 +274,106 @@ input {
 .radioInlineGroup {
     width: 450px;
     height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    column-gap: 30px;
 }
 
 .Radio {
-    width: 84px;
+    width: 120px;
     height: 32px;
     display: flex;
 }
 
-#gender_option_male {
-    width: 1px;
-    height: 1px;
+#genderOptionMale {
+    width: 55px;
+    height: 15px;
 }
 
-#gender_option_female {
-    width: 1px;
-    height: 1px;
+#genderOptionFemale {
+    width: 60px;
+    height: 15px;
 }
-#gender_option_nonbinary {
-    width: 1px;
-    height: 1px;
+#genderOptionNonbinary {
+    width: 60px;
+    height: 15px;
+}
+.radioLabel {
+    width: 150px;
+}
+
+.TextForLabel {
+    width: 200px;
+    /* display: flex; */
+}
+
+.thirdPartyGroup {
+    width: 450px;
+    height: 72px;
+    display: flex;
+}
+.checkbox {
+    width: 450px;
+    height: 48px;
+}
+
+.checkboxLabel {
+    width: 450px;
+    height: 40px;
+    display: flex;
+}
+
+
+#thirdPartyCheckbox {
+width: 16px;
+height: 16px;
+}
+
+.checkboxTextForLabel {
+    width: 434px;
+    height: 38px;
+}
+
+.EmailFormCenter {
+    width: 450px;
+    height: 190px;
+}
+
+.SignupButtonContainer {
+    width: 450px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: transparent; */
+    /* border-radius: 35px; */
+}
+
+.Button {
+    width: 150px;
+    height: 56px;
+    border: #169c46;
+    border-radius: 35px;
+    background-color: #1ed760;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.Button:hover {
+    transition: all .4ms ease-in-out;
+    
+}
+
+.signupTypeElement {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+a {
+    text-decoration: none;
+    color: #169c46;
 }

@@ -1,6 +1,6 @@
 import "./Registration.css";
 import React from "react";
-import logo2 from "../components/Assets/logo2.png";
+import logo2 from "../Assets/logo2.png";
 import { BsFacebook, BsGoogle } from "react-icons/bs";
 
 function Registration() {
@@ -135,7 +135,7 @@ function Registration() {
                     <option value="11">November</option>
                     <option value="12">December</option>
                   </select>
-                  {/* <svg
+                  <svg
                     role="img"
                     focusable="false"
                     height="16"
@@ -149,7 +149,7 @@ function Registration() {
                       fill="none"
                       stroke="#181818"
                     ></polyline>
-                  </svg> */}
+                  </svg>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@ function Registration() {
           <div data-testid="dob-error-messages-parent"></div>
         </div>
 
-        <fieldset role="radiogroup" class="radioGroup">
+        {/* <fieldset role="radiogroup" class="radioGroup"> */}
           <legend class="radioLabelGroup">What's your gender?</legend>
           <div className="radioInlineGroup">
             <div className="Radio">
@@ -212,7 +212,7 @@ function Registration() {
                 name="gender"
                 required=""
                 value="male"
-              //  className="VisuallyHidden"
+               className="VisuallyHidden"
               />
               <label for="gender_option_male" className="radioLabel">
                 <span className="Indicator"></span>
@@ -226,7 +226,7 @@ function Registration() {
                 name="gender"
                 required=""
                 value="female"
-                // className="VisuallyHidden"
+                className="VisuallyHidden"
               />
               <label for="gender_option_female" className="radioLabel">
                 <span class="Indicator"></span>
@@ -236,32 +236,31 @@ function Registration() {
             <div className="Radio">
               <input
                 type="radio"
-                id="gender_option_nonbinary"
+                id="genderOptionNonbinary"
                 name="gender"
                 required=""
                 value="neutral"
-                // className="VisuallyHidden"
+                className="VisuallyHidden"
               />
-              <label for="gender_option_nonbinary" className="radioLabel">
+              <label for="genderOptionNonbinary" className="radioLabel">
                 <span className="Indicator"></span>
                 <span className="TextForLabel">Non-binary</span>
               </label>
             </div>
           </div>
-        </fieldset>
-        <div class="Group-u9bcx5-0 bXxIjv">
+        {/* </fieldset> */}
+        <div class="thirdPartyGroup">
           <div class="Checkbox">
             <input
               type="checkbox"
-              id="third-party-checkbox"
+              id="thirdPartyCheckbox"
               name="thirdParty"
             />
-            <label for="third-party-checkbox" class="Label">
+            <label for="third-party-checkbox" class="checkboxLabel">
               <span class="Indicator"></span>
-              <span class="TextForLabel">
+              <span class="checkboxTextForLabel">
                 <span class="LinkContainer">
-                  Share my registration data with Spotify's content providers
-                  for marketing purposes.
+                  Share my registration data with Soundify's content providers for marketing purposes.
                 </span>
               </span>
             </label>
@@ -271,7 +270,7 @@ function Registration() {
         <div class="EmailFormCenter">
           <p class="TypeElement">
             <span class="LinkContainerP">
-              By clicking on sign-up, you agree to Spotify's{" "}
+              By clicking on sign-up, you agree to Soundify's{" "}
               <a
                 href="/us/legal/end-user-agreement/"
                 target="_blank"
@@ -283,26 +282,25 @@ function Registration() {
             </span>
           </p>
           <p class="TypeElement">
-            <span class="LinkContainer">
-              To learn more about how Spotify collects, uses, shares and
-              protects your personal data, please see{" "}
+            <span class="LinkContainer"><br/>
+              To learn more about how Soundify collects, uses, shares and protects your personal data, please see{" "}
               <a
                 href="/us/legal/privacy-policy/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Spotify's Privacy Policy
+                Soundify's Privacy Policy
               </a>
               .
             </span>
-          </p>
-          <div class="SignupButton__ButtonContainerSignup">
+          </p><br/>
+          <div class="SignupButtonContainer">
             <button type="submit" class="Button">
               <div class="ButtonInner">Sign up</div>
               <div class="ButtonFocus"></div>
             </button>
           </div>
-          <p class="TypeElement">
+          <p class="signupTypeElement"><br />
             <span class="LinkContainer">
               Have an account?{" "}
               <a href="https://accounts.spotify.com?continue=https%3A%2F%2Fwww.spotify.com%2Fus%2Fdownload%2F">
