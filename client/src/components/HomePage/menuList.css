@@ -1,0 +1,215 @@
+.menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.icons {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+
+
+/* Menu container  */
+
+
+.menuContainer {
+    margin-top: 40px;
+   
+}
+
+
+.menuContainer h5, 
+.nameContainer h5 {
+    color: white;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.menuContainer ul {
+    margin-top: 30px;
+   
+}
+
+
+.menuContainer ul li{
+    margin: 5px 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menuContainer ul li a {
+    text-decoration: none;
+    color: #848484;
+}
+
+
+.menuContainer ul li::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -20px;
+    width: 0px;
+    height: 100%;
+    background-color: rgb(49, 172, 255);
+    border-radius: 5px;
+}
+
+
+.menuContainer ul li:hover:before {
+    width: 5px;
+    transition: 0.3s;
+}
+
+
+
+.menuContainer ul li:hover a {
+    color: #f1f1f1;
+    transition: 0.3s;
+} 
+
+
+
+
+/* Playlist Container */
+
+
+.playlistContainer {
+    cursor: pointer;
+}
+
+
+.playlistContainer .nameContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+
+
+/* Scrollbar is not hiding */
+
+.playlistContainer .playlistScroll {
+    height: 200px;
+    overflow-x:hidden;
+    overflow-y: scroll;
+   
+    position: relative;
+
+}
+
+
+.playlistContainer .playlistScroll .playlist {
+    display: flex;
+    color: #848484;
+    justify-content: space-between;
+}
+
+
+
+.playlistContainer .playlistScroll .playlist:hover {
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.playlistContainer .playlistScroll .playlist p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline;
+}
+
+
+
+/* Tracklist */
+
+
+.tracklist {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+}
+
+
+.tracklist .top {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tracklist .top img {
+    width: 90px;
+    border-radius: 100%;
+}
+
+
+.tracklist .top p {
+    margin-left: 20px;
+    color:#f1f1f1;
+}
+
+.tracklist .top p span {
+    display: block;
+    color: #848484;
+}
+
+
+.tracklist .bottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.tracklist .bottom .icons:hover {
+    cursor: pointer;
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.tracklist .bottom input {
+    position: relative;
+    height: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    appearance: none;
+}
+
+
+.tracklist .bottom input::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: rgba(180, 218, 253, 0.637);
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    transition: width 250ms linear;
+}
+
+
+
+.tracklist .bottom input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    margin: -2px 0 0 0 ;
+    z-index: 3;
+    box-sizing: border-box;
+    transition: all 250ms linear;
+
+}

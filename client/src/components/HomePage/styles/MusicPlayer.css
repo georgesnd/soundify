@@ -1,0 +1,90 @@
+.musicPlayer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+.songImage {
+
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+
+.songImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.songAttributes {
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.songAttributes .top,
+.songAttributes .bottom {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+
+}
+
+
+.songAttributes .icons {
+    color: #595959;
+
+}
+
+.songAttributes .top .left,
+.songAttributes .top .middle,
+.songAttributes .top .right {
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+  align-items: center;
+
+}
+
+
+
+
+.songAttributes .top .left .icons,
+.songAttributes .top .middle .icons,
+.songAttributes .top .right .icons {
+    margin: 0px 10px;
+}
+
+.songAttributes .top .left .loved .icons {
+    color: aqua;
+    filter: drop-shadow(0px 0px 20px #69f3fd);
+}
+
+
+.songAttributes .top .middle .back .icons:nth-child(2),
+.songAttributes .top .middle .forward .icons:nth-child(1) {
+    color: #9a9a9a;
+}
+
+
+.songAttributes .top .middle .playPause {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 100%;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
