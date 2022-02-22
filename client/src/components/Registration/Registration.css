@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #076ef5;
+    font-size: .875rem;
+    font-weight: 500;
+}
+.regisWrapper{
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 25vw;
+    justify-content: center;
+    background-color: #f9f9ff;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    border-radius: 15px;
+}
+ form {
+    width: 30vw;
+    margin-left: 5vw;
+ }
+.topIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 20px;
+    margin-top: 2vh;
+}
+
+h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+img {
+    height: 80px;
+    width: 80px;
+}
+
+.buttonSignup{
+    width: 450px;
+    height: 150px;
+}
+
+.facebookSignup {
+    width: 402px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupFacebook {
+    color: white;
+    background-color: #2828b4;
+    height: 45px;
+    width: 312px;
+    column-gap: 15px;
+    border: 1px solid;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.signupIcon {
+    font-size: 24px;
+}
+
+
+.googleSignup {
+    width: 402px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.signupGoogle {
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 253, 253);
+    height: 45px;
+    width: 312px;
+    column-gap: 15px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+.formDivider  hr {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hrdivider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+
+.formGroup {
+    width: 402px;
+    height: 85px;
+    margin-top: 10px;
+    display: flex;
+    /* justify-content: left; */
+    align-items: flex-start;
+}
+
+.labelGroup {
+    width: 402px;
+    height: 28px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.Row {
+    width: 402px;
+    height: 28px;
+    text-align: left;
+    line-height: 1.8;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+input {
+    width: 450px;
+    height: 40px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #777;
+}
+/*Date of birth  */
+.bioData {
+    width: 402px;
+    height: 132px;
+    display: inline;
+}
+
+.bioLabelGroup {
+    margin-top: 30px;
+    width: 450px;
+    height: 28px;
+    text-align: left;
+    line-height: 1.8;
+    font-size: .875rem;
+}
+
+.Row-sc {
+    width: 450px;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.monthWrapper {
+    height: 80px;
+    width: 202px;
+}
+.monthFormGroup {
+    height: 80px;
+    width: 203px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.monthLabelGroup {
+    width: 203px;
+    height: 28px;
+    font-size: .875rem;
+    padding: 1px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+.SelectContainer {
+    width: 203px;
+    height: 50px;
+    font-size: 18px;
+}
+
+#month {
+    font-size: .875rem;
+    width: 202.5px;
+    height: 52px;
+    padding: .875rem;
+}
+
+/* Day*/
+.Day {
+    width: 90px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.dayFormGroup {
+    width: 90px;
+    height: 80px;
+}
+
+.dayLabelGroup {
+    width: 90px;
+    height: 27px;
+    display: flex;
+   
+}
+
+.dayLabel{
+    width: 90px;
+    height: 24px;
+}
+
+#day {
+    width: 75px;
+    height: 52px;
+}
+
+.Year {
+    width: 112.5px;
+    height: 80px;
+
+}
+
+.yearFormGroup {
+    width: 112.5px;
+    height: 80px; 
+}
+
+.yearLabelGroup {
+    width:112.5px;
+    height: 28px;
+    display: flex;
+}
+
+.yearInput {
+    width:112.5px;
+    height: 52px;
+}
+/*  radio */
+
+.radioGroup {
+    width: 450px;
+    height: 85px;
+}
+
+.radioLabelGroup {
+    margin-top: 40px;
+    width: 450px;
+    height: 28px;
+    display: flex;
+}
+
+.radioInlineGroup {
+    width: 450px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    column-gap: 30px;
+}
+
+.Radio {
+    width: 120px;
+    height: 32px;
+    display: flex;
+}
+
+#genderOptionMale {
+    width: 55px;
+    height: 15px;
+}
+
+#genderOptionFemale {
+    width: 60px;
+    height: 15px;
+}
+#genderOptionNonbinary {
+    width: 60px;
+    height: 15px;
+}
+.radioLabel {
+    width: 150px;
+}
+
+.TextForLabel {
+    width: 200px;
+    /* display: flex; */
+}
+
+.thirdPartyGroup {
+    width: 450px;
+    height: 72px;
+    display: flex;
+}
+.checkbox {
+    width: 450px;
+    height: 48px;
+}
+
+.checkboxLabel {
+    width: 450px;
+    height: 40px;
+    display: flex;
+}
+
+
+#thirdPartyCheckbox {
+width: 16px;
+height: 16px;
+}
+
+.checkboxTextForLabel {
+    width: 434px;
+    height: 38px;
+}
+
+.EmailFormCenter {
+    width: 450px;
+    height: 190px;
+}
+
+.SignupButtonContainer {
+    width: 450px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Button {
+    width: 150px;
+    height: 56px;
+    border: #169c46;
+    border-radius: 35px;
+    background-color: #1ed760;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.Button:hover {
+    transition: all .4ms ease-in-out;
+    
+}
+
+.signupTypeElement {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+a {
+    text-decoration: none;
+    color: #169c46;
+}
