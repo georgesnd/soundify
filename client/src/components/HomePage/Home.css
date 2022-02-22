@@ -1,0 +1,87 @@
+ .home{ 
+  width: 100vh;
+  height: auto;
+  margin-bottom: -5px;
+} 
+
+.hometext {
+    z-index: 2;
+    position: absolute;
+    color: black;
+    width: 100vw;
+    padding-top: 3%;
+    font-size: 50px;
+    
+}
+.hometext p {
+    padding-top: 1px;
+    text-align: left;
+    margin-left: 25%;
+    font-size: 26px;
+}
+.homeButton {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 40%;
+    background-color: black;
+    color: cyan;
+    border: none;
+    font-size: 20px;
+    margin-top:20px;
+}
+.title1 {
+    margin-left: 25%;
+}
+.title2{
+    margin-left: 40%;
+}
+
+.backgroundB{
+    width: 100vw;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+}
+.logo h2 {
+    margin-left: 30px;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.headerContainer{
+    background-color: black;
+    color: gold;
+    display: flex;
+    height: 110px;
+    justify-content: space-around;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.headerContainer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerContainer li {
+    color: gold;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.headerContainer li:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.headerContainer a {
+    text-decoration: none;
+}
+.headerContainer img {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+}

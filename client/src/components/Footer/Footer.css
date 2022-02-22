@@ -1,0 +1,57 @@
+.footer {
+    background-color: black;
+    color: gold;
+    text-align: left;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: -1px;
+}
+.footerDiv2 li {
+    list-style: none;
+    line-height: 35px;
+
+}
+.footerContainer {
+    display: flex;
+   justify-content: center;
+   padding-top: 30px;
+   
+}
+.footerContainer p {
+    margin-left: 10px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.footerDiv2 {
+    display: flex;
+    width: 40%;
+    margin-left: 50px;
+}
+.footerDiv2 li {
+    padding-left: 30px;
+}
+.footerDiv2 ul :hover {
+    color: cyan;
+    cursor: pointer;
+}
+.footerDiv3 {
+    font-size: 40px;
+    padding-top: 20px;
+    
+}
+.footerDiv3 :first-child {
+    padding-right: 20px;
+}
+.footerDiv3 :last-child {
+    padding-left: 20px;
+}
+
+.footer img {
+    width: 80px;
+}
+h6 {
+    text-align: right;
+    margin-right: 21%;
+    padding-bottom: 50px;
+}
