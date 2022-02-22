@@ -4,40 +4,40 @@ import logo2 from "../Assets/logo2.png";
 import { BsFacebook, BsGoogle } from "react-icons/bs";
 
 // import Login from './Login';
-import React, {useState, useEffect} from "react";
+// import React, {useState, useEffect} from "react";
 
 
 
 
 function Registration() {
-  const AUTH_KEY = 'info';
+//   const AUTH_KEY = 'info';
 
-  const [info, setInfo] = useState({
-    email:"",
-    password:"",
-    username:"",
-    biodata:"",
-    gender:""
+//   const [info, setInfo] = useState({
+//     email:"",
+//     password:"",
+//     username:"",
+//     biodata:"",
+//     gender:""
 
-  })
+//   })
 
-useEffect(() => {
-        const retriveContacts = JSON.parse(server.getItem(AUTH_KEY));
-        if (retriveContacts) setInfo(retriveContacts);
-    }, [])
+// useEffect(() => {
+//         const retriveContacts = JSON.parse(server.getItem(AUTH_KEY));
+//         if (retriveContacts) setInfo(retriveContacts);
+//     }, [])
 
-    useEffect(()=>{
-        server.setItem(AUTH_KEY, JSON.stringify(Info))
-    },[Info])
+//     useEffect(()=>{
+//         server.setItem(AUTH_KEY, JSON.stringify(Info))
+//     },[Info])
 
-    let register = (e) =>{
-        e.preventDefault()
+//     let register = (e) =>{
+//         e.preventDefault()
 
-        if (!Info.username || !Info.email || !Info.password || !Info.biodate || !info.gender) {
-            alert("Complete all the fields!!!")
-            return
-        }
-    }
+//         if (!Info.username || !Info.email || !Info.password || !Info.biodate || !info.gender) {
+//             alert("Complete all the fields!!!")
+//             return
+//         }
+//     }
 
 
   return (
@@ -69,7 +69,7 @@ useEffect(() => {
         </div>
       </span>
 
-      <form onSubmit={register}>
+      <form >
         <h2>Sign up with your email address</h2>
 
         <div className="formGroup">
