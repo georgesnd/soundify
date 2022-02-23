@@ -1,7 +1,7 @@
 import React from 'react'
 import LeftMenu from './LeftMenu'
-import MainContainer from './MainContainer'
-import RightMenu from './RightMenu'
+import RightMenu from "./RightMenu"
+import MainContainer from "./MainContainer"
 import "./AllInOne.css"
 
 export default function AllInOne() {
@@ -10,7 +10,9 @@ export default function AllInOne() {
         <LeftMenu />
         <MainContainer />
         <RightMenu />
-        {/* <div className='background'></div> */}
+        
+   
+        <div className='background'></div>
 
 
     </div>

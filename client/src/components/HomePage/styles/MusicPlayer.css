@@ -88,3 +88,55 @@
     color: black;
 
 }
+
+.songAttributes .bottom {
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+
+.songAttributes .bottom .bar {
+    width: 70%;
+    position: relative;
+    height: 5px;
+    outline: none;
+    border: none;
+    appearance: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+
+
+}
+
+.songAttributes .bottom .bar::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #848484;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+
+.songAttributes .bottom .bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+ 
+}
+
+.songAttributes .bottom .currentTime,
+.songAttributes .bottom .durationTime {
+    font-size: 12px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+

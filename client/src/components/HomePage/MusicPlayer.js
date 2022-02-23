@@ -30,7 +30,9 @@ export default function MusicPlayer({song,imgSrc}) {
 
   return (
     <div className='musicPlayer'>
-        <div className="songImage"></div>
+        <div className="songImage">
+            <img src={imgSrc} alt="" />
+        </div>
         <div className="songAttributes">
 
         <audio src={song} preload='metada' />
@@ -59,7 +61,11 @@ export default function MusicPlayer({song,imgSrc}) {
             </div>
             <div className="right"></div>
         </div>
-        <div className="bottom"></div>
+        <div className="bottom">
+            <div className="currentTime">00:00</div>
+            <input type="range" className='bar' />
+            <div className="durationTime">00:00</div>
+        </div>
         </div>
 
 
