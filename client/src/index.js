@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <Switch>
-      
+      {/* <Route path='/support' exact component={support}/> */}
       <Route path='/' exact>
         <App />
       </Route>
