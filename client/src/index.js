@@ -10,7 +10,6 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <Switch>
-
       
       <Route path='/' exact>
         <App />
